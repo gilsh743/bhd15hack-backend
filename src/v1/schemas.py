@@ -58,6 +58,7 @@ validators = {
 filters = {
     ('nms_document_attachment_raw_attachment_id', 'GET'): {200: {'headers': None, 'schema': None}, 400: {'headers': None, 'schema': None}, 404: {'headers': None, 'schema': None}},
     ('nms_document_raw_document_id', 'GET'): {200: {'headers': None, 'schema': None}, 400: {'headers': None, 'schema': None}, 404: {'headers': None, 'schema': None}},
+    ('text_translation_addEntry', 'POST'): {200: {'headers': None, 'schema': None}, 401: {'headers': None, 'schema': None}},
 }
 
 scopes = {

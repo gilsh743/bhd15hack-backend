@@ -78,6 +78,20 @@ paths:
           description: document was not found
       security:
         - nms_auth: []
+  '/text/translation/addEntry':
+      post:
+        summary: add a new entry
+        requestBody:
+          required: true
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/translation_entry'
+        responses:
+          '200':
+            description: ok
+          '401':
+            description: forbidden, not implemented ATM.
 components:
   securitySchemes:
     nms_auth:
