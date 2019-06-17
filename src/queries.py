@@ -1,0 +1,1 @@
+INSERT_QUERY = """INSERT INTO translated_text (orig, translated) VALUES """
